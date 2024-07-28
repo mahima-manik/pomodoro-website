@@ -5,7 +5,6 @@ import type { JSX } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/logo.png";
 import config from "@/config";
 
@@ -36,20 +35,14 @@ const cta: JSX.Element = (
       width={40}
       height={40}
     />
-    <Image
-      src="/flight.png"
-      alt="Flight icon"
-      className="w-5 h-5"
-      width={50}
-      height={50}
-    />
+    <br />
     <a
-      className="btn btn-primary flex items-center gap-2 text-white"
+      className="flex items-center gap-2 text-lg font-bold"
       href="https://twitter.com/mahima_manik"
       target="_blank"
       rel="noopener noreferrer"
     >
-      Follow my journey
+      Follow my journey on X ↗
     </a>
   </div>
 );
@@ -78,16 +71,7 @@ const Header = () => {
             href="/"
             title={`${config.appName} homepage`}
           >
-            <Image
-              src={logo}
-              alt={`${config.appName} logo`}
-              className="w-8"
-              placeholder="blur"
-              priority={true}
-              width={32}
-              height={32}
-            />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+          <span className="font-extrabold text-lg">{config.appName}</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}

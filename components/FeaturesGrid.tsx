@@ -1,32 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import logo from "@/app/logo.png";
+import Image from "next/image";
 
 const features = [
   {
-    title: "Collect user feedback",
+    title: "Create categories for your tasks",
     description:
-      "Use your Insighto's board to let users submit features they want.",
+      "What do you want to focus on?",
     styles: "bg-primary text-primary-content",
     demo: (
       <div className="overflow-hidden h-full flex items-stretch">
         <div className="w-full translate-x-12 bg-base-200 rounded-t-box h-full p-6">
           <p className="font-medium uppercase tracking-wide text-base-content/60 text-sm mb-3">
-            Suggest a feature
+            Create categories
           </p>
           <div className="relative textarea py-4 h-full mr-12 bg-base-200 group-hover:bg-base-100 group-hover:border-base-content/10 text-base-content">
             <div className="absolute left-4 top-4 group-hover:hidden flex items-center ">
-              <span>Notifica</span>
+              <span>Readi</span>
               <span className="w-[2px] h-6 bg-primary animate-pulse"></span>
             </div>
             <div className="opacity-0 group-hover:opacity-100 duration-500">
-              Notifications should be visible only on certain pages.
+              Reading books.
             </div>
+            <div className="w-full h-[1px] bg-base-content/20 my-2"></div>
             <div className="opacity-0 group-hover:opacity-100 duration-1000 flex items-center gap-0.5">
-              <span>Terms & privacy pages don&apos;t need them</span>
+              <span>Office work.</span>
               <span className="w-[2px] h-6 bg-primary animate-pulse"></span>
             </div>
             <button className="btn shadow-lg btn-primary absolute right-4 bottom-6 opacity-0 group-hover:opacity-100 duration-1000">
-              Submit
+              Save
             </button>
           </div>
         </div>
@@ -34,8 +37,8 @@ const features = [
     ),
   },
   {
-    title: "Prioritize features",
-    description: "Users upvote features they want. You know what to ship next.",
+    title: "Define Tasks",
+    description: "Define tasks and track progress",
     styles: "md:col-span-2 bg-base-300 text-base-content",
     demo: (
       <div className="px-6 max-w-[600px] flex flex-col gap-4 overflow-hidden">
@@ -183,56 +186,25 @@ const features = [
     ),
   },
   {
-    title: "Discover new ideas",
-    description: "Users can chat and discuss features.",
+    title: "Managed pomodoros and breaks",
+    description: "Get simple reminder to start break or pomodoro",
     styles: "bg-neutral text-neutral-content",
     demo: (
       <div className="text-neutral-content px-6 space-y-4">
-        {[
-          {
-            id: 1,
-            text: "Can we have a feature to add a custom domain to IndiePage?",
-            userImg:
-              "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
-            userName: "Marc Lou",
-            createdAt: "2024-09-01T00:00:00Z",
-          },
-          {
-            id: 2,
-            text: "I'd definitelly pay for that 🤩",
-            userImg:
-              "https://pbs.twimg.com/profile_images/1778434561556320256/knBJT1OR_400x400.jpg",
-            userName: "Dan K.",
-            createdAt: "2024-09-02T00:00:00Z",
-            transition:
-              "opacity-0 group-hover:opacity-100 duration-500 translate-x-1/4 group-hover:translate-x-0",
-          },
-        ]?.map((reply) => (
-          <div
-            key={reply.id}
-            className={`px-6 py-4 bg-neutral-content text-neutral rounded-box ${reply?.transition}`}
-          >
-            <div className="mb-2 whitespace-pre-wrap">{reply.text}</div>
-            <div className="text-neutral/80 flex items-center gap-2 text-sm">
-              <div className="flex items-center gap-2">
-                <div className="avatar">
-                  <div className="w-7 rounded-full">
-                    <img src={reply.userImg} alt={reply.userName} />
-                  </div>
-                </div>
-                <div className=""> {reply.userName} </div>
-              </div>
-              •
-              <div>
-                {new Date(reply.createdAt).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </div>
-            </div>
+        <div className="relative bg-neutral-content text-neutral rounded-box p-4 flex items-center gap-4">
+          <Image src={logo} alt="Logo" className="w-8 h-8" />
+          <div>
+            <p className="font-semibold">Pomodoro Timer</p>
+            <p>Time is up! Starting break.</p>
           </div>
-        ))}
+        </div>
+        <div className="relative bg-neutral-content text-neutral rounded-box p-4 flex items-center gap-4">
+          <Image src={logo} alt="Logo" className="w-8 h-8" />
+          <div>
+            <p className="font-semibold">Pomodoro Timer</p>
+            <p>Break is over! Start next pomodoro?</p>
+          </div>
+        </div>
       </div>
     ),
   },
@@ -242,9 +214,13 @@ const FeaturesGrid = () => {
     <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-20 lg:py-32">
       <div className="flex flex-col max-w-[82rem] gap-16 md:gap-20 px-4">
         <h2 className="max-w-3xl font-black text-4xl md:text-6xl tracking-[-0.01em]">
-          Ship features <br /> users{" "}
-          <span className="underline decoration-dashed underline-offset-8 decoration-base-300">
-            really want
+          Hyperfocus with{" "}
+          <span className="underline decoration-dashed underline-offset-8 decoration-base-content">
+            Pomodoro
+          </span>{" "}
+          and{" "}
+          <span className="underline decoration-dashed underline-offset-8 decoration-base-content">
+            breaks
           </span>
         </h2>
         <div className="flex flex-col w-full h-fit gap-4 lg:gap-10 text-text-default max-w-[82rem]">

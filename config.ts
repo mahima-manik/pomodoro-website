@@ -3,7 +3,7 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "Pomodoro",
+  appName: "Minimal Pomodoro",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "A pomodoro timer that helps you focus on one task at a time and then take a break.",
