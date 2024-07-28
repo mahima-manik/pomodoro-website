@@ -26,9 +26,26 @@ const Hero = () => {
           A minimalistic pomodoro timer that helps you focus on one task at a
           time and then take a break.
         </p>
-        <button className="btn btn-primary btn-wide">
-          Get {config.appName}
-        </button>
+        <div className="flex gap-4">
+          <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Get it on Google Play"
+              style={{ width: "200px", height: "60px" }}
+              width="200"
+              height="60"
+            />
+          </a>
+          <a href="https://apps.apple.com/us/app/your-app-id" target="_blank">
+            <img
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="Download on the App Store"
+              style={{ width: "200px", height: "60px" }}
+              width="200"
+              height="60"
+            />
+          </a>
+        </div>
 
         <TestimonialsAvatars priority={true} />
       </div>
