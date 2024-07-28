@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
-import logo from "@/app/icon.png";
+import logo from "@/app/logo.png";
 import config from "@/config";
 
 const links: {
@@ -41,7 +41,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header style={{ backgroundColor: "#e4e4e4" }}>
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
