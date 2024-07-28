@@ -36,8 +36,15 @@ const cta: JSX.Element = (
       width={40}
       height={40}
     />
+    <Image
+      src="/flight.png"
+      alt="Flight icon"
+      className="w-5 h-5"
+      width={50}
+      height={50}
+    />
     <a
-      className="btn btn-primary flex items-center gap-2"
+      className="btn btn-primary flex items-center gap-2 text-white"
       href="https://twitter.com/mahima_manik"
       target="_blank"
       rel="noopener noreferrer"
