@@ -14,6 +14,8 @@ const Hero = () => {
         <p className="text-lg opacity-80 leading-relaxed">
           A minimalistic pomodoro timer that helps you focus on one task at a
           time and then take a break.
+          <br />
+          <strong>Free to download on both Google Play and the App Store!</strong>
         </p>
         <div className="flex gap-4">
           <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
