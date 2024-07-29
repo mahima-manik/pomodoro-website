@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import logo from "@/app/logo.png";
+import progressImage from "@/app/progress.png";
 import Image from "next/image";
 
 const features = [
@@ -37,155 +38,6 @@ const features = [
     ),
   },
   {
-    title: "Define Tasks",
-    description: "Define tasks and track progress",
-    styles: "md:col-span-2 bg-base-300 text-base-content",
-    demo: (
-      <div className="px-6 max-w-[600px] flex flex-col gap-4 overflow-hidden">
-        {[
-          {
-            text: "Add LemonSqueezy integration to the boilerplate",
-            secondaryText: "Yes, ship this! ✅",
-            votes: 48,
-            transition: "group-hover:-mt-36 group-hover:md:-mt-28 duration-500",
-          },
-          {
-            text: "A new pricing table for metered billing",
-            secondaryText: "Maybe ship this 🤔",
-            votes: 12,
-          },
-          {
-            text: "A new UI library for the dashboard",
-            secondaryText: "But don't ship that ❌",
-            votes: 1,
-          },
-        ].map((feature, i) => (
-          <div
-            className={`p-4 bg-base-100 text-base-content rounded-box flex justify-between mb-2 gap-4 ${feature?.transition}`}
-            key={i}
-          >
-            <div>
-              <p className="font-semibold mb-1">{feature.text}</p>
-              <p className="text-base-content-secondary">
-                {feature.secondaryText}
-              </p>
-            </div>
-            <button
-              className={`px-4 py-2 rounded-box group text-center text-lg duration-150 border border-transparent bg-primary text-primary-content`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`w-5 h-5 ease-in-out duration-150 -translate-y-0.5 group-hover:translate-y-0`}
-              >
-                <path d="m18 15-6-6-6 6" />
-              </svg>
-              {feature.votes}
-            </button>
-          </div>
-        ))}
-      </div>
-    ),
-  },
-  {
-    title: "Your brand, your board",
-    description: "Customize your Insighto board with 7 themes.",
-    styles: "md:col-span-2 bg-base-100 text-base-content",
-    demo: (
-      <div className="flex left-0 w-full h-full pt-0 lg:pt-8 overflow-hidden -mt-4">
-        <div className="-rotate-[8deg] flex min-w-max overflow-x-visible h-full lg:pt-4">
-          {[
-            {
-              buttonStyles: "bg-primary text-primary-content",
-              css: "-ml-1 rotate-[6deg] w-72 h-72 z-30 bg-base-200 text-base-content rounded-2xl group-hover:-ml-64 group-hover:opacity-0 group-hover:scale-75 transition-all duration-500 p-4",
-            },
-            {
-              buttonStyles: "bg-secondary text-secondary-content",
-              css: "rotate-[6deg] bg-base-200 text-base-content w-72 h-72 -mr-20 -ml-20 z-20 rounded-xl p-4",
-            },
-            {
-              buttonStyles: "bg-accent text-accent-content",
-              css: "rotate-[6deg] bg-base-200 text-base-content z-10 w-72 h-72 rounded-xl p-4",
-            },
-            {
-              buttonStyles: "bg-neutral text-neutral-content",
-              css: "rotate-[6deg] bg-base-200 text-base-content w-72 h-72 -ml-20 rounded-xl p-4",
-            },
-            {
-              buttonStyles: "bg-base-100 text-base-content",
-              css: "rotate-[6deg] bg-base-200 text-base-content w-72 h-72 -ml-10 -z-10 rounded-xl p-4 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300",
-            },
-          ].map((theme, i) => (
-            <div className={theme.css} key={i}>
-              <div className="font-medium uppercase tracking-wide text-base-content/60 text-sm mb-3">
-                Trending feedback
-              </div>
-              <div className="space-y-2">
-                <div className="p-4 bg-base-100 rounded-box flex justify-between">
-                  <div>
-                    <p className="font-semibold mb-1">Clickable cards</p>
-                    <p className="opacity-80">Make cards more accessible</p>
-                  </div>
-                  <button
-                    className={`px-4 py-2 rounded-box group text-center text-lg duration-150 border border-transparent ${theme.buttonStyles}`}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className={`w-5 h-5 ease-in-out duration-150 -translate-y-0.5 group-hover:translate-y-0`}
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                    8
-                  </button>
-                </div>
-                <div className="p-4 bg-base-100 rounded-box flex justify-between ">
-                  <div>
-                    <p className="font-semibold mb-1">Bigger images</p>
-                    <p className="opacity-80">Make cards more accessible</p>
-                  </div>
-                  <button
-                    className={`px-4 py-2 rounded-box group text-center text-lg duration-150 border border-transparent ${theme.buttonStyles}`}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className={`w-5 h-5 ease-in-out duration-150 -translate-y-0.5 group-hover:translate-y-0`}
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                    5
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    ),
-  },
-  {
     title: "Managed pomodoros and breaks",
     description: "Get simple reminder to start break or pomodoro",
     styles: "bg-neutral text-neutral-content",
@@ -204,6 +56,18 @@ const features = [
             <p className="font-semibold">Pomodoro Timer</p>
             <p>Break is over! Start next pomodoro?</p>
           </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Progress board to track sessions and hours",
+    description: "See your progress and see how you are doing",
+    styles: "bg-neutral text-neutral-content md:col-span-1 text-base-content",
+    demo: (
+      <div className="relative w-full h-full overflow-hidden group">
+        <div className="absolute inset-0 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4">
+          <Image src={progressImage} alt="Progress Image" layout="fill" objectFit="cover" />
         </div>
       </div>
     ),
