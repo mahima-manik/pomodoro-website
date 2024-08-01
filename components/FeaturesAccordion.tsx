@@ -152,7 +152,7 @@ const Item = ({
             isOpen ? "text-primary font-semibold" : ""
           }`}
         >
-          <h3 className="inline">{title}</h3>
+          <h3 className="inline text-2xl">{title}</h3>
         </span>
       </button>
 
@@ -165,7 +165,7 @@ const Item = ({
             : { maxHeight: 0, opacity: 0 }
         }
       >
-        <div className="pb-5 leading-relaxed">{description}</div>
+        <div className="pb-5 leading-relaxed text-lg">{description}</div>
       </div>
     </li>
   );
@@ -225,7 +225,7 @@ const FeaturesAccordion = () => {
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
           All you need to manage your time
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            and get productive
+           and get productive
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
