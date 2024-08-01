@@ -75,7 +75,7 @@ const features = [
     description:
       "Create categories for your tasks. This will help you focus on one task at a time and avoid multitasking",
     type: "video",
-    path: "/collection.mp4",
+    path: "/categories.mp4",
     format: "video/mp4",
     svg: (
       <svg
