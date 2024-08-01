@@ -2,7 +2,7 @@
 
 import type { JSX } from "react";
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -144,13 +144,13 @@ const ButtonAccordionCategories = () => {
 // By default it shows the logo, the links, and the CTA.
 // In the links, there's a popover with the categories.
 const HeaderBlog = () => {
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
-  useEffect(() => {
-    setIsOpen(false);
-  }, [searchParams]);
+  // useEffect(() => {
+  //   setIsOpen(false);
+  // }, [searchParams]);
 
   return (
     <header className="bg-base-200">
