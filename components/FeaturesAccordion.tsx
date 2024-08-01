@@ -74,9 +74,9 @@ const features = [
     title: "Task Categories",
     description:
       "Create categories for your tasks. This will help you focus on one task at a time and avoid multitasking",
-    type: "image",
-    path: "/time.png",
-    format: "png",
+    type: "video",
+    path: "/collection.mp4",
+    format: "video/mp4",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
