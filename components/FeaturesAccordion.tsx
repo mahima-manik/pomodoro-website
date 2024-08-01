@@ -26,9 +26,9 @@ const features = [
     title: "Focus Sessions",
     description:
       "Start your 25 mins focus session, get notified when it's over. Break starts automatically when the session is over. Start your next session when you're ready",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
+    type: "image",
+    path: "/iphone8.png",
+    format: "png",
         svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,9 @@ const features = [
     title: "Flow Music",
     description:
       "Listen to music while you focus on your tasks. Music will help you get into the flow and get more productive",
-    type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+    type: "video",
+    path: "/work_music.mp4",
+    format: "video/mp4",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +74,9 @@ const features = [
     title: "Task Categories",
     description:
       "Create categories for your tasks. This will help you focus on one task at a time and avoid multitasking",
+    type: "image",
+    path: "/time.png",
+    format: "png",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +98,9 @@ const features = [
     title: "Track your Progress",
     description:
       "Visualize your work with monthly reports. See how much time you spend on each task and get a report of your work",
+    type: "image",
+    path: "/heatmap.png",
+    format: "png",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
