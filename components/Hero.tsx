@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
       <div className="lg:w-1/2">
         <Image
-          src="/hero.png"
+          src="/home_screen.png"
           alt="Product Demo"
           className="w-full"
           priority={true}

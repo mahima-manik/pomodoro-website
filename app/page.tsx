@@ -19,8 +19,8 @@ export default function Page() {
         <Hero />
         <Problem />
         <FeaturesAccordion/>
-        <FeaturesGrid />
-        <Pricing />
+        {/* <FeaturesGrid /> */}
+        {/* <Pricing /> */}
         <FAQ />
         <CTA />
       </main>

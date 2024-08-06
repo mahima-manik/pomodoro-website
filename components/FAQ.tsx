@@ -13,23 +13,30 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
-  },
-  {
-    question: "Can I get a refund?",
+    question: "What is Pomodoro Technique?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        The Pomodoro Technique is a time management method that helps you stay focused and productive by breaking work into intervals, traditionally 25 minutes long, separated by short breaks. After completing four intervals, a longer break is taken.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "Is this app paid?",
+    answer: <div className="space-y-2 leading-relaxed">We offer free trials to all our users. You get 2 months free trial period on yearly plan and 2 weeks free trial period on monthly plan. You can cancel anytime before your trial period ends.</div>,
+  },
+  {
+    question: "Does the app support notifications?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">Yes, the app sends notifications to remind you when a Pomodoro session ends or its time to start next session.</div>
     ),
+  },
+  {
+    question: "How does the app handle breaks?",
+    answer: <div className="space-y-2 leading-relaxed">The app automatically starts a break session after a Pomodoro session ends. The break session is 5 minutes long.</div>,
+  },
+  {
+    question: "Can I listen to music during sessions?",
+    answer: <div className="space-y-2 leading-relaxed">Yes, the app includes an option to play music or ambient sounds during your work intervals to help you stay focused. You can choose from the available options in the settings.</div>,
   },
 ];
 
