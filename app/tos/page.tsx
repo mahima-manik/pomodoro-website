@@ -59,21 +59,21 @@ const TOS = () => {
         >
           {`Last Updated: September 26, 2023
 
-Welcome to ShipFast!
+Welcome to Minimal Pomodoro Timer!
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of the Minimal Pomodoro Timer website at https://www.getpomodoroapp.com/ ("Website") and the services provided by Minimal Pomodoro Timer. By using our Website and services, you agree to these Terms.
 
-1. Description of ShipFast
+1. Description of Minimal Pomodoro Timer
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+Minimal Pomodoro Timer is an app that helps you focus on your work using the pomodoro technique and improve your productivity. It is available on Apple Store and Google Play.
 
 2. Ownership and Usage Rights
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+When you purchase a package from Minimal Pomodoro Timer, you gain the right to download and use the app.
 
 3. User Data and Privacy
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+We collect and store user data, including name, email, usage information and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://www.getpomodoroapp.com/privacy-policy.
 
 4. Non-Personal Data Collection
 
@@ -81,15 +81,15 @@ We use web cookies to collect non-personal data for the purpose of improving our
 
 5. Governing Law
 
-These Terms are governed by the laws of France.
+These Terms are governed by the laws of India.
 
 6. Updates to the Terms
 
-We may update these Terms from time to time. Users will be notified of any changes via email.
+We may update these Terms from time to time.
 
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
+For any questions or concerns regarding these Terms of Service, please contact us at bytesizedminds@gmail.com.
 
-Thank you for using ShipFast!`}
+Thank you for using Minimal Pomodoro Timer!`}
         </pre>
       </div>
     </main>
