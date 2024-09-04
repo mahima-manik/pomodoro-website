@@ -26,7 +26,7 @@ const Hero = () => {
               height="60"
             />
           </a>
-          <a href="https://apps.apple.com/us/app/your-app-id" target="_blank">
+          <a href="https://apps.apple.com/us/app/minimal-pomodoro-timer/id6550619899" target="_blank">
             <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
               alt="Download on the App Store"
